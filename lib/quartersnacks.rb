@@ -1,3 +1,6 @@
+###############MANHATTAN p1 scraper
+
+
 require 'nokogiri'
 require 'open-uri'
 

@@ -1,0 +1,57 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-size: 100px;
+  font-family: "milano roman";
+  margin-left: 450px;
+}
+
+nav {
+  font-family: 'Poiret One';
+  margin-left: 550px;
+
+}
+
+.spot_link {
+  text-decoration: none;
+  display: block;
+  margin-left: 650px;
+}
+
+.spot_name {
+  margin-left: 550px;
+  font-size: 100px;
+}
+
+div{
+  filter: 100%;
+}
+
+.boroughs{
+  float: left;
+  margin-left: 500px;
+  font-family: monospace;
+}
+
+.links {
+  text-decoration: none;
+  display: inline;
+}
+
+.gifs{
+  margin-left: 700px;
+  margin-top: 50px;
+}
+
+.queensgif{
+  display: none;
+}
+
+.manhattangif {
+  display: none;
+}
+
+.westchestergif {
+  display: none;
+}

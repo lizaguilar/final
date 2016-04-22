@@ -1,0 +1,21 @@
+<!-- sidebar -->
+<nav>
+<%= link_to "manhattan", manhattan_index_path, :class => 'links' %>
+<%= link_to "brooklyn", brooklyn_index_path, :class => 'links' %>
+<%= link_to "queens",queens_index_path, :class => 'links' %>
+<%= link_to "bronx", bronx_index_path, :class => 'links' %>
+<%= link_to "westchester", westchester_index_path, :class => 'links' %>
+<%= link_to "home", root_path, :class => 'links' %>
+</nav>
+
+
+<h1>westchester</h1>
+
+
+
+<!-- display spot names -->
+<% @spots.each do |s| %>
+      <% if s.borough == "Westchester" %>
+        <%= link_to "#{s.name}", spot_path(s.id), :class => 'spot_link' %>
+        <% end %>
+    <% end %>

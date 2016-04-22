@@ -1,0 +1,17 @@
+<h1>b r o n x</h1>
+<!-- sidebar -->
+<nav>
+<h3><%= link_to "brooklyn", brooklyn_index_path %></h3>
+<h3><%= link_to "queens",queens_index_path %></h3>
+<h3><%= link_to "bronx", bronx_index_path %></h3>
+<h3><%= link_to "westchester", westchester_index_path %></h3>
+<h3><%= link_to "home", root_path %></h3>
+</nav>
+
+
+<!-- display spot names -->
+<% @spots.each do |s| %>
+      <% if s.borough == "bronx" %>
+        <li><%= link_to "#{s.name}", spot_path(s.id) %></li>
+        <% end %>
+    <% end %>

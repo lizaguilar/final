@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160413160630) do
+ActiveRecord::Schema.define(version: 20160421234459) do
 
   create_table "spots", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20160413160630) do
     t.string   "borough"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "image1"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "image4"
+    t.string   "location"
+    t.string   "bust"
+    t.string   "bust2"
+    t.string   "bust3"
   end
 
 end
