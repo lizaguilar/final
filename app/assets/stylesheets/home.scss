@@ -1,35 +1,112 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  max-width: 100%;
+
+}
+
+.app_name {
+  font-size: 100px;
+  font-family: "milano roman";
+  margin-left: 400px;
+  padding-top: 30px;
+
+}
+
+.borough_name {
+  font-size: 100px;
+  font-family: "milano roman";
+  margin-left: 500px;
+}
+
+.individual_spot_nav {
+  margin-left: 450px;
+  font-size: 20px;
+  font-family: monospace;
+  padding-top: 20px;
+}
+
+.info_bar {
+  width: 300px;
+  margin-left: 50px;
+  position: relative;
+  float: left;
+}
+
+
 h1 {
   font-size: 100px;
   font-family: "milano roman";
-  margin-left: 450px;
+  margin-left: 500px;
 }
 
 nav {
-  font-family: 'Poiret One';
-  margin-left: 550px;
+  font-family: monospace;
+  padding-top: 50px;
+  font-size: 20px;
+  margin-left: 510px;
 
 }
 
 .spot_link {
   text-decoration: none;
+  font-family: monospace;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
   display: block;
-  margin-left: 650px;
+  margin-left: 350px;
 }
 
 .spot_name {
-  margin-left: 550px;
+  margin-left: 490px;
   font-size: 100px;
+  font-family: 'milano roman';
+  padding-top: 20px;
 }
 
 div{
   filter: 100%;
 }
 
+.location{
+
+  font-size: 25px;
+  font-family: monospace;
+
+}
+
+.spot_location{
+  font-family: monospace;
+  font-size: 25px;
+
+}
+
+.description{
+  font-family: monospace;
+  font-size: 25px;
+
+}
+
+.spot_description{
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.bust_level{
+  font-family: monospace;
+  font-size: 25px;
+ 
+}
+
+.bust_image{
+
+}
+
 .boroughs{
   float: left;
+  margin-top: 100px;
   margin-left: 500px;
   font-family: monospace;
 }
@@ -39,9 +116,18 @@ div{
   display: inline;
 }
 
+.manhattan_home_link, .bk_home_link, .queens_home_link, .bx_home_link, .westchester_home_link {
+  text-decoration: none;
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 .gifs{
   margin-left: 700px;
   margin-top: 50px;
+  padding-top: 20px;
 }
 
 .queensgif{

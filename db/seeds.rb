@@ -79,14 +79,14 @@ end
 
 ####BLACK HUBBA#######
 
-array = ["http://quartersnacks.com/spots/downtown-manhattan/city-hall-area/courthouse-drop/"]
+array = ["http://quartersnacks.com/spots/downtown-manhattan/city-hall-area/black-hubba/"]
 
 for i in 0..array.length-1 do 
   manhattan = Nokogiri::HTML(open(array[i]))
   borough = "Manhattan"
   spot_name = manhattan.at_css("h2 a").content
   # puts spot_name.to_s
-  description = manhattan.css(".entry p")[1]
+  description = manhattan.css(".entry p")[3]
   if description
     puts description.content
   end

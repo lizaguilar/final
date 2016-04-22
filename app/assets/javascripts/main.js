@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  $(".manhattan").hover(function(){
+  $(".manhattan_home_link").hover(function(){
         $(".manhattangif").toggle();
     });
 
-  $(".queens").hover(function(){
+  $(".queens_home_link").hover(function(){
     $(".queensgif").toggle();
 
   });
 
-  $(".westchester").hover(function(){
+  $(".westchester_home_link").hover(function(){
     $(".westchestergif").toggle();
 
   });

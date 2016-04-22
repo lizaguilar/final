@@ -1,30 +1,42 @@
     
-    <nav>
-    <%= link_to "manhattan", manhattan_index_path, :class => 'links' %>
-    <%= link_to "brooklyn", brooklyn_index_path, :class => 'links' %>
-    <%= link_to "queens",queens_index_path, :class => 'links' %>
-    <%= link_to "bronx", bronx_index_path, :class => 'links' %>
-    <%= link_to "westchester", westchester_index_path, :class => 'links' %>
-    <%= link_to "home", root_path, :class => 'links' %>
-    </nav>
+    <div class="individual_spot_nav">
+    
+    <%= link_to "( ͡° ͜ʖ //", root_path, :class => 'links' %>
+    <%= link_to "brooklyn //", brooklyn_index_path, :class => 'links' %>
+    <%= link_to "bronx //", bronx_index_path, :class => 'links' %>
+    <%= link_to "manhattan //", manhattan_index_path, :class => 'links' %>
+    <%= link_to "queens //",queens_index_path, :class => 'links' %>
+    <%= link_to "westchester ", westchester_index_path, :class => 'links' %>
+    </div>
 
-  <div class="spot_name"><%= @spot.name %></div>
+  <i><div class="spot_name"><%= @spot.name %></div></i>
 
+  
+<div class="info_bar">
+  
+<b><div class="location">Location:</div></b>
+<br>
   <div class="spot_location"><%= @spot.location %></div>
 
+  <br>
+
+  <b><div class="description">Description:</div></b>
 
   <div class="spot_description"><%=raw @spot.description %></div>
 
+  <br>
 
-  <div class="bust_level">Bust:</div>
+  <b><div class="bust_level">Bust:</div></b>
+  <br>
   <div class="bust_image"><%= image_tag(@spot.bust) %></div>
+</div>
 
   
 
-  <div class ="slider" style="width: 700px; height: 500px; margin-left: 50px; margin-left: 450px;">
-  <div><%= image_tag(@spot.image1, width: '700', height: '500') %></div>
-  <div><%= image_tag(@spot.image2, width: '700', height: '500') %></div>
-  <div><%= image_tag(@spot.image3, width: '700', height: '500') %></div>
-  <div><%= image_tag(@spot.image4, width: '700', height: '500') %></div>
+  <div class ="slider" style="width: 800px; height: 500px; margin-left: 50px; margin-left: 450px;">
+  <div><%= image_tag(@spot.image1, width: '800', height: '500') %></div>
+  <div><%= image_tag(@spot.image2, width: '800', height: '500') %></div>
+  <div><%= image_tag(@spot.image3, width: '800', height: '500') %></div>
+  <div><%= image_tag(@spot.image4, width: '800', height: '500') %></div>
     </div>
 
