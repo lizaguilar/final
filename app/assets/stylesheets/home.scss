@@ -8,7 +8,7 @@ body{
 
 .app_name {
   font-size: 100px;
-  font-family: "milano roman";
+  font-family: 'Quicksand', sans-serif;
   margin-left: 400px;
   padding-top: 30px;
 
@@ -16,8 +16,30 @@ body{
 
 .borough_name {
   font-size: 100px;
-  font-family: "milano roman";
+  font-family: 'Quicksand', sans-serif;
   margin-left: 500px;
+  padding-bottom: 50px;
+}
+
+.bronx{
+  margin-left: 400px;
+  font-size: 100px;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 600px;
+}
+
+.manhattan {
+  margin-left: 400px;
+  font-size: 100px;
+  font-family:'Quicksand',sans-serif;
+  margin-left: 450px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+iframe {
+  margin-left: 50px;
+
 }
 
 .individual_spot_nav {
@@ -49,21 +71,29 @@ nav {
 
 }
 
+
+.spots{
+  width: 250px;
+  float: left;
+  margin-left: 300px;
+}
 .spot_link {
+  width: 250px;
+  color: black;
   text-decoration: none;
   font-family: monospace;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
   display: block;
-  margin-left: 350px;
 }
 
 .spot_name {
   margin-left: 490px;
   font-size: 100px;
-  font-family: 'milano roman';
-  padding-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 div{
@@ -101,7 +131,6 @@ div{
 }
 
 .bust_image{
-
 }
 
 .boroughs{
@@ -114,14 +143,22 @@ div{
 .links {
   text-decoration: none;
   display: inline;
+  color: black;
 }
 
 .manhattan_home_link, .bk_home_link, .queens_home_link, .bx_home_link, .westchester_home_link {
   text-decoration: none;
   display: block;
+  color: black;
   padding-bottom: 20px;
   padding-top: 20px;
   font-size: 20px;
+}
+
+.westchester_home_link:hover{
+  font-size: 70px;
+  color: red;
+
 }
 
 .gifs{
@@ -139,5 +176,13 @@ div{
 }
 
 .westchestergif {
+  display: none;
+}
+
+.bkgif {
+  display: none;
+}
+
+.bxgif{
   display: none;
 }

@@ -13,6 +13,14 @@ $(document).ready(function() {
 
   });
 
+  $(".bk_home_link").hover(function(){
+    $(".bkgif").toggle();
+  });
+
+  $(".bx_home_link").hover(function(){
+    $(".bxgif").toggle();
+  });
+
   $('.slider').slick({
   dots: true,
   infinite: true,

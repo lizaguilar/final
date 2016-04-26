@@ -392,7 +392,7 @@ for i in 0..array.length-1 do
   image3 = "http://quartersnacks.com/wp-content/uploads/2011/07/P6110017.jpg"
   image4 = "http://quartersnacks.com/wp-content/uploads/2011/07/P6110033.jpg"
   location = "161st St & Grand Concourse"
-  bust = "2pigs.png"
+  bust = "2pigs.jpg"
 
 
   Spot.create(name: spot_name, description: description, borough: "Bronx", image1: image1, image2: image2, image3: image3, image4: image4, location: location, bust: bust)

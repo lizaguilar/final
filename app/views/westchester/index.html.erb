@@ -8,13 +8,17 @@
     </nav>
 
 
-<i><h1>w e s t c h e s t e r</h1></i>
+<i><div class="borough_name">w e s t c h e s t e r</div></i>
 
 
 
 <!-- display spot names -->
+<div class="spots">
 <% @spots.each do |s| %>
       <% if s.borough == "Westchester" %>
         <%= link_to "#{s.name}", spot_path(s.id), :class => 'spot_link' %>
         <% end %>
     <% end %>
+</div>
+
+<iframe width="640" height="469" src="https://www.youtube.com/embed/5RkC0YyyuBs" frameborder="1px"</iframe>

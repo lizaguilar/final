@@ -1,22 +1,24 @@
 <!-- sidebar -->
 <nav>
-
+<%= link_to "( ͡° ͜ʖ //", root_path, :class => 'links' %>
 <%= link_to "bronx //", bronx_index_path, :class => 'links' %>
-<%= link_to "home //", root_path, :class => 'links' %>
 <%= link_to "manhattan //", manhattan_index_path, :class => 'links' %>
 <%= link_to "queens //",queens_index_path, :class => 'links' %>
-
 <%= link_to "westchester", westchester_index_path, :class => 'links' %>
 
 </nav>
 
 
-<i><h1>b r o o k l y n</h1></i>
+<i><div class="borough_name">b r o o k l y n</div></i>
 
 
 <!-- display spot names -->
+<div class="spots">
 <% @spots.each do |s| %>
       <% if s.borough == "Brooklyn" %>
         <%= link_to "#{s.name}", spot_path(s.id), :class => 'spot_link' %>
         <% end %>
     <% end %>
+</div>
+
+<iframe width="640" height="469" src="https://www.youtube.com/embed/xQ7_tU-0k20" frameborder="1px"</iframe>
